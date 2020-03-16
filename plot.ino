@@ -1,17 +1,17 @@
 // Motor 1 - X direction
 
-const int stepPin1 = 3;
-const int dirPin1 = 4;
-const int enPin1 = 5;
+const int stepPin1 = 6; //6
+const int dirPin1 = 7; //7
+const int enPin1 = 8; //8
 
 // Motor 2 - Y direction
 
-const int stepPin2 = 6;
-const int dirPin2 = 7;
-const int enPin2 = 8;
+const int stepPin2 = 3; //3
+const int dirPin2 = 4; //4
+const int enPin2 = 5; //5
 
 // Steps per revolution for the motors.
-const int revTomm = 9;
+const int revTomm = 10;
 
 // Setting the Servo Pins
 #include <Servo.h>
@@ -20,8 +20,8 @@ Servo servo;
 
 const int servoPin = 9;
 const int servoAngle = 0;
-const int servoUp = 10;
-const int servoDown = 80;
+const int servoUp = 45;
+const int servoDown = 120;
 
 // Getting user input without delay
 const byte numChars = 32;
@@ -127,7 +127,7 @@ void loop() {
   // *End of Test*
   Serial.println("");
   Serial.println("******");
-  Serial.println("Plotting will start in 5 seconds.");
+  Serial.println("It is MAGIC TIME");
 
   delay(5000);
   //  while ( true)
